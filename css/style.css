@@ -59,7 +59,7 @@ a.btn{
   /*! color: #fff; */
 	
   display: flex;
-  width: 30vw;
+  min-width: 30vw;
 	align-items: center;
   justify-content: flex-end;
 }
@@ -70,6 +70,11 @@ a.btn{
 	font-weight: 600;
 	margin-right: 1em;
 }
+
+._jsMenu{
+	display: none;
+}
+
 .logo{
 	width: 20vw;
 }
@@ -177,11 +182,15 @@ a.btn{
 	background: linear-gradient(0deg,#3e2a4f,transparent);
 }
 .featuredContent{
-	max-width: 400px;
 	padding: 1em;
 	position: relative;
 	z-index: 1;
 }
+
+.contentWrapper{
+	max-width: 400px;
+}
+
 
 .FAQs{
 
