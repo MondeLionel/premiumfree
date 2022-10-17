@@ -1,9 +1,16 @@
+:root{
+	--primary-color: #432e4f;
+	--accent-color: #fdab3f;
+	--secondary-color: #180b50;
+}
+
 *{}
 
 body{
 	color: #fff;
-	background-color: slateblue;
+	background:linear-gradient(45deg, var(--secondary-color), var(--primary-color),var(--accent-color)); 
 	font-family: 'Josefin Sans', sans-serif;
+	/*animation: color-change-2x 20s linear infinite alternate both;*/
 }
 
 a{
@@ -29,11 +36,18 @@ section{
 	margin: 5em auto;
 }
 
+a.btn{
+	font-weight: bold;
+}
+
 .navigation{
 	display: flex;
 	justify-content: space-between;
 	padding:1em;
 	align-items: center;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
 }
 
 .menu{
@@ -76,6 +90,7 @@ section{
 	display: flex;
 	align-items: center;
 	padding: 1em;
+	background-position: center;
 }
 
 .hero--content{
@@ -87,6 +102,7 @@ section{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
+	margin-bottom: 1.4em;
 }
 
 .heading h1{
@@ -104,6 +120,8 @@ section{
 	justify-content: center;
 	align-items: center;
 	
+	border-radius: 5px;
+	padding: 10px;
 }
 
 .swiper-container{
@@ -114,7 +132,7 @@ section{
   text-decoration: none;
 	font-weight: bold;
 	color: purple;
-	font-size:25px;
+	font-size:1.5rem;
   text-transform: uppercase;
 }
 
@@ -147,9 +165,33 @@ section{
 }
 
 .FAQs .accordion-item{
-	background-color: yellow;
+	background-color: #f5f5f5;
+}
+
+.FAQs .accordion-button:not(.collapsed){
+
+	background-color: #2c1977;
+	color: inherit;
 }
 
 .howto{
 
+}
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+
+
+@keyframes color-change-2x {
+  0% {
+    background: var(--primary-color);
+  }
+  50% {
+  	background: var(--secondary-color);
+  }
+  100% {
+    background: var(--accent-color);
+  }
 }
