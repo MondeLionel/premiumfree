@@ -1,0 +1,97 @@
+
+/*XS MOBILE*/
+@media (max-width: 360px){
+	*{}
+}
+
+/*NORMAL MOBILE PORTRAIT*/
+
+@media (max-width: 460px){
+	*{}
+	.logo{
+		width: 60vw;
+	}
+	.hero{
+		
+	background-position-x: 87%;
+		position: relative;
+		height: 90vh;
+	}
+	
+	.hero::after{
+		content: '';
+		position: absolute;
+		background: linear-gradient(45deg,var(--primary-color),var(--secondary-color));
+		width: 100%;
+		height:100%;
+		left: 0;
+		opacity: 0.7
+	}
+	
+	.hero .hero--content{
+		position: relative;
+		z-index: 1;
+	}
+	.navigation{
+	 padding: 10px;
+		
+	}
+	.menu--open .menu{
+		transform: translateX(0);
+		transition: transform 0.5s cubic-bezier(.23,1,.32,1);
+	}
+	
+	body.menu--open{
+		overflow: hidden;
+	}
+	
+	._jsMenu{
+		display: block;
+		z-index: 1;
+	}
+	
+	.menu{
+		position:absolute;
+		display: flex;
+		top:0;
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		background-color: var(--secondary-color);
+		left: 0;
+		transform: translateX(100%);
+		justify-content: flex-start;
+		padding-top: 5em;
+	}
+	.heading{
+		align-items: center;
+	}
+	
+	.heading a{
+		text-decoration: underline;
+	}
+
+	.menu .menuItem{
+		display: block;
+		font-size: 2em;
+		width: 100%;
+		margin: 0;
+		padding: 15px;
+		/*! border-bottom: 1px solid; */
+		/*! border-top: 1px solid; */
+		background-color: #faebd70a;
+		margin-bottom: 10px;
+	}
+	
+	.cta{
+		position: absolute;
+		top:10px;
+		left:10px;
+	}
+
+	.cta a{
+		width: 100%;
+		margin: 0;
+		display: block;
+	}
+}
