@@ -40,6 +40,11 @@ a.btn{
 	font-weight: bold;
 }
 
+.scrolled .navigation{
+	background-color: rgba(255,255,255,0.3);
+	backdrop-filter:blur(20px);
+}
+
 .navigation{
 	display: flex;
 	justify-content: space-between;
@@ -119,15 +124,25 @@ a.btn{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 	border-radius: 5px;
 	padding: 10px;
+}
+
+.channel.seeMore{
+  background: linear-gradient(200deg,var(--secondary-color),var(--accent-color));
+	color:#fff;
+}
+
+.channel.seeMore a{
+	color: #fff;
 }
 
 .swiper-container{
 	padding-left: 7vw;
 }
-
+.swiper-container.featuredSwiper{
+	padding: inherit;
+}
 .channel a{
   text-decoration: none;
 	font-weight: bold;
@@ -140,15 +155,32 @@ a.btn{
 
 }
 
+
+
 .featuredItem{
 
 	height: 80vh;
 	background-color: teal;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: unset;
+	display: flex;
+	align-items: center;
+	position:relative;
 }
 
+.featuredItem::after{
+	content:'';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg,#3e2a4f,transparent);
+}
 .featuredContent{
 	max-width: 400px;
 	padding: 1em;
+	position: relative;
+	z-index: 1;
 }
 
 .FAQs{
@@ -178,10 +210,10 @@ a.btn{
 
 }
 
-.color-change-2x {
+/*.color-change-2x {
 	-webkit-animation: color-change-2x 2s linear infinite alternate both;
 	        animation: color-change-2x 2s linear infinite alternate both;
-}
+}*/
 
 
 @keyframes color-change-2x {

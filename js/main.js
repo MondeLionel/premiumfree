@@ -1,4 +1,4 @@
-
+const body = document.querySelector("body")
 
 window.addEventListener("scroll", function(){
   checkScroll()
@@ -33,9 +33,27 @@ const featuredSwiper = new Swiper('.featuredSwiper', {
 
 
 function checkScroll(){
-   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector("body").classList.add("scrolled");
+  // happy path first approach
+   if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 150) {
+    body.classList.add("scrolled");
     console.log(document.body.scrollTop)
-
+    return
   }
+
+  body.classList.remove("scrolled")
+
 }
+
+
+const menuBtn = document.querySelector('._jsMenu');
+
+menuBtn.addEventListener("click", function(e){
+  e.preventDefault();
+  body.classList.toggle("menu--open")
+  if(body.classList.contains('menu--open')){
+    this.innerText = 'Close';
+
+  }else{
+    this.innerText = 'Menu';
+  }
+})
