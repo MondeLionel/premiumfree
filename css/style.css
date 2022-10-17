@@ -25,6 +25,10 @@ main{
 	min-height: 100vh;
 }
 
+section{
+	margin: 5em auto;
+}
+
 .navigation{
 	display: flex;
 	justify-content: space-between;
@@ -82,7 +86,7 @@ main{
 
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .heading h1{
@@ -111,15 +115,39 @@ main{
 	font-weight: bold;
 	color: purple;
 	font-size:25px;
-	
+  text-transform: uppercase;
 }
 
 .featured{
 
 }
 
+.featuredItem{
+
+	height: 80vh;
+	background-color: teal;
+}
+
+.featuredContent{
+	max-width: 400px;
+	padding: 1em;
+}
+
 .FAQs{
 
+}
+
+.FAQs p{
+
+	color: #141124;
+}
+
+.FAQs a{
+	
+}
+
+.FAQs .accordion-item{
+	background-color: yellow;
 }
 
 .howto{
