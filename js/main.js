@@ -32,6 +32,20 @@ const featuredSwiper = new Swiper('.featuredSwiper', {
 });
 
 
+const newsSwiper = new Swiper('.newsSwiper',{
+    speed: 400,
+  spaceBetween: 10,
+  slidesPerView:1,
+   breakpoints: {
+    // when window width is >= 600px
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    }
+  }
+})
+
+
 function checkScroll(){
   // happy path first approach
    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 150) {
@@ -57,3 +71,5 @@ menuBtn.addEventListener("click", function(e){
     this.innerText = 'Menu';
   }
 })
+
+const player = new Plyr('#preview-video');

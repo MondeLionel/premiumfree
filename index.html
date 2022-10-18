@@ -23,15 +23,24 @@
 			<img src="img/logo.png" alt="" class="img-fluid">
 		</div>
 		<div class="menu">
+			<a href="#" class="menuItem">News & Updates</a>
 			<a href="#" class="menuItem">Channels</a>
-			<a href="#" class="menuItem">Privacy Policy</a>
+			<a href="#" class="menuItem" data-bs-toggle="modal" data-bs-target="#howto-modal">How to watch</a>
 			<div class="cta">
 				<a href="#" class="btn btn-warning">Stream Now</a>
 			</div>
 		</div>
 		<a href="javascript:void(0)" class="_jsMenu btn btn-light">Menu</a>
-		
 	</div>
+
+<!-- CHAT WIDGET ABSOLUTE-->
+<div class="chatWidget">
+	<a href="https://wa.me/27672176298?text=Hello%20I%20help%20with%20your%20services" class="chat">
+		<img src="img/icons/icons8-whatsapp.svg" alt="whatsapp icon" class="img-fluid icon">
+		<span>CHAT WITH US <br>ON WHATSAPP</span>
+	</a>
+</div>
+
 	<div class="hero">
 		<div class="container">
 			<div class="hero--content">
@@ -78,14 +87,15 @@
 			</div>
 		</section>
 
-		<section class="featured">
-			<div class="heading container">
+		<section class="featured container">
+			<div class="heading ">
 				<h1>Featured this week</h1>
-				<a href="#">See all</a>
+				<!-- <a href="#">See all</a> -->
 			</div>
 			<div class="swiper-container featuredSwiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
+
 						<div class="featuredItem" style="background-image: url('img/featured_poster.jpg');">
 							<div class="featuredContent container">
 								<div class="contentWrapper">
@@ -94,8 +104,8 @@
 								<h2>Love in the Center</h2>
 								<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."</p>
 								<div class="playBtns">
-									<a href="#" class="btn btn-light">Preview</a>
-									<a href="#" class="btn btn-warning">Watch Now</a>
+									<a href="javascript:void(0)" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#preview-modal">Preview</a>
+									<a href="javascript:void(0)" class="btn btn-warning">Watch Now</a>
 								</div>
 							</div>
 							</div>
@@ -214,16 +224,125 @@
 	</div>
 	</div>
 </section>
-		<section class="howTo">
-			<div class="row">
-				<div class="col-md-4">
-					
+
+<section class="news container">
+	<div class="heading text-center">
+		<h1 class="">Latest news this week</h1>
+	</div>
+	<div class="swiper-container newsSwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="article">
+					<img src="img/featured_poster.jpg" alt="" class="img-fluid">
+					<div class="articleContent">
+					<p><b>Article one</b></p>
+					<p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+					<a href="javascript:void(0)" class="btn">Read more</a>
+				  </div>
 				</div>
 			</div>
-		</section>
-
+			<div class="swiper-slide">
+				<div class="article">
+					<img src="img/featured_poster.jpg" alt="" class="img-fluid">
+					<div class="articleContent">
+						<p><b>Article Two</b></p>
+						<p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+						<a href="javascript:void(0)" class="btn">Read more</a>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="article">
+					<img src="img/featured_poster.jpg" alt="" class="img-fluid">
+					<div class="articleContent">
+						<p><b>Article Three</b></p>
+						<p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+						<a href="javascript:void(0)" class="btn">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</section>
 
 </main>
+
+
+<div class="modals">
+
+	<div class="modal fade" id="preview-modal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<video src="media/videos/vid.mp4" class="video" id="preview-video"></video>
+			</div>
+		</div>
+	</div>
+
+	<!-- how to watch -->
+	<div class="modal fade" id="howto-modal">
+		<div class="modal-dialog modal-dialog-centered modal-xl">
+			<div class="modal-content">
+				<section class="howTo container">
+					<div class="heading">
+						<h1>How to watch</h1>
+					</div>
+					<div class="row">
+						<!-- 1 -->
+						<div class="col-md-4">
+							<div class="howToItem">
+								<h4>Francophone Africa</h4>
+								<h4>Free-to-Air Satellite 10 Channels</h4>
+								<h4>Eutelsat 16A</h4>
+								<img src="https://premiumfree.tv/wp-content/uploads/2022/03/Eutelsat-16A-1.jpg" alt="" class="img-fluid">
+								<p class="py-3"><b>EUTELSAT 16A @16° East</b></p>
+								<ul>
+									<li>Frequency: 12686 MHz</li>
+									<li>Polarisation: Horizontal</li>
+									<li>Modulation: VB-S2/8-PSK</li>
+									<li>FEC: 3/4</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 2 -->
+						<div class="col-md-4">
+							<div class="howToItem">
+								<h4>East and Southern Africa</h4>
+								<h4>Free-to-Air Satellite 18 Channels</h4>
+								<h4>Eutelsat 7B</h4>
+								<img src="https://premiumfree.tv/wp-content/uploads/2022/03/Eutelsat-7B-1.jpg" alt="" class="img-fluid">
+								<p class="py-3"><b>EUTELSAT 7B @ 7° East</b></p>
+								<ul>
+									<li>Frequency: 10845 MHz</li>
+									<li>Polarisation: Horizontal</li>
+									<li>Modulation: DVB/8-PSK</li>
+									<li>FEC: 2/3</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 3 -->
+						<div class="col-md-4">
+							<div class="howToItem">
+								<h4>South Africa and Pan Africa</h4>
+								<h4>Free-to-Air Satellite 18 Channels</h4>
+								<h4>Intelsat IS20</h4>
+								<img src="https://premiumfree.tv/wp-content/uploads/2022/03/image018.png" alt="" class="img-fluid">
+								<p class="py-3"><b>INTELSAT IS20 @ 68.5° East</b></p>
+								<ul>
+									<li>Frequency: 12722</li>
+									<li>Polarisation: Horizontal</li>
+									<li>Symbol Rate: 30000</li>
+									<li>Modulation: DVB-S</li>
+									<li>FEC: 1/2</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+</div>
 	<script src="vendors/js/alpine.js"></script>
 	<script src="vendors/js/bootstrap.min.js"></script>
 	<script src="vendors/js/swiper.min.js"></script>

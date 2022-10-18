@@ -2,6 +2,7 @@
 	--primary-color: #432e4f;
 	--accent-color: #fdab3f;
 	--secondary-color: #180b50;
+	--plyr-color-main: #180b50;
 }
 
 *{}
@@ -39,6 +40,18 @@ section{
 a.btn{
 	font-weight: bold;
 }
+
+.chatWidget{position: fixed;/*! width: 20vw; *//*! min-width: 80px; */background-color: green;border-radius: 10px;padding: 10px;z-index: 100;bottom: 2em;right: 1em;}
+.chat{display: flex;align-items: center;font-size: 0.7em;}
+.chat:hover{
+	color: #fff;
+}
+.chat img{
+	
+	width: 40px;
+	margin-right: 1em;
+}
+
 
 .scrolled .navigation{
 	background-color: rgba(255,255,255,0.3);
@@ -163,7 +176,6 @@ a.btn{
 
 
 .featuredItem{
-
 	height: 80vh;
 	background-color: teal;
 	background-repeat: no-repeat;
@@ -172,6 +184,8 @@ a.btn{
 	display: flex;
 	align-items: center;
 	position:relative;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .featuredItem::after{
@@ -215,15 +229,51 @@ a.btn{
 	color: inherit;
 }
 
+.news{
+	
+}
+
+.news .heading{
+	justify-content: center;
+}
+
+.news .heading h1{
+	
+}
+
 .howto{
 
 }
 
-/*.color-change-2x {
-	-webkit-animation: color-change-2x 2s linear infinite alternate both;
-	        animation: color-change-2x 2s linear infinite alternate both;
-}*/
+.howToItem{
+	padding: 1em 10px;
+	background-color: #ffb609;
+	border-radius: 10px;
+	color: #000;
+}
 
+.howToItem img{
+	
+	width: 100%;
+	height: 33vh;
+	object-fit: cover;
+}
+
+.article{
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: aliceblue;
+	color: #000;
+}
+
+.article img{
+	
+	margin-bottom: 15px;
+}
+
+.articleContent{
+	padding: 10px;
+}
 
 @keyframes color-change-2x {
   0% {
