@@ -8,6 +8,10 @@
 
 @media (max-width: 460px){
 	*{}
+	
+	.channel a{
+		font-size: 1rem;
+	}
 	.logo{
 		width: 60vw;
 	}
@@ -26,6 +30,10 @@
 		height:100%;
 		left: 0;
 		opacity: 0.7
+	}
+	
+	.channel-page .hero::after{
+		display: none;
 	}
 	
 	.hero .hero--content{
@@ -93,5 +101,9 @@
 		width: 100%;
 		margin: 0;
 		display: block;
+	}
+	
+	.channel-page .channelItem{
+		height: 30vh;
 	}
 }

@@ -20,6 +20,10 @@ a{
 	color: #fff;
 }
 
+a:hover{
+	color: var(--accent-color);
+}
+
 p{
 
 }
@@ -41,8 +45,25 @@ a.btn{
 	font-weight: bold;
 }
 
-.chatWidget{position: fixed;/*! width: 20vw; *//*! min-width: 80px; */background-color: green;border-radius: 10px;padding: 10px;z-index: 100;bottom: 2em;right: 1em;}
-.chat{display: flex;align-items: center;font-size: 0.7em;}
+.closeBtn{
+	padding: 1em;
+	text-align: right;
+}
+.chatWidget{
+	position: fixed;
+	background-color: green;
+	border-radius: 10px;
+	padding: 10px;
+	z-index: 100;
+	bottom: 2em;
+	right: 1em;
+}
+
+.chat{
+	display: flex;
+	align-items: center;
+	font-size: 0.7em;
+}
 .chat:hover{
 	color: #fff;
 }
@@ -233,6 +254,10 @@ a.btn{
 	
 }
 
+.news .newsSwiper{
+	padding: 0;
+}
+
 .news .heading{
 	justify-content: center;
 }
@@ -245,11 +270,17 @@ a.btn{
 
 }
 
+
+.howTo h1{
+	color: #000;
+}
+
 .howToItem{
 	padding: 1em 10px;
 	background-color: #ffb609;
 	border-radius: 10px;
 	color: #000;
+	margin-bottom: 2em;
 }
 
 .howToItem img{
@@ -262,7 +293,7 @@ a.btn{
 .article{
 	border-radius: 10px;
 	overflow: hidden;
-	background-color: aliceblue;
+	background-color: #fff;
 	color: #000;
 }
 
@@ -273,6 +304,91 @@ a.btn{
 
 .articleContent{
 	padding: 10px;
+}
+
+
+.footerItem{
+  display: block;	
+  font-weight: normal;
+}
+
+
+
+.copyright{
+	
+}
+
+.copyright p{
+	
+}
+
+.video{
+	width: 100%;
+}
+
+.channel-page .hero{
+	height: 70vh;
+	background: unset;
+}
+
+.channel-page .nav-link{
+
+	border: none;
+	width: 50%;
+	text-align: center;
+	color: aliceblue;
+	border-radius: 0;
+	background-color: var(--accent-color);
+}
+
+.channel-page #nav-tab{
+	
+	border: none;
+	justify-content: center;
+}
+
+.channel-page .tab-content{
+	margin-top:2em;
+}
+
+.channel-page .channelItem{
+	height: 400px;
+	background-color: #fff;
+	color: #000;
+	display: flex;
+	border-radius: 10px;
+	overflow: hidden;
+	position:relative;
+	flex-flow: column;
+	margin-bottom: 2em;
+}
+.channelItem::after{
+/* 	content: '';
+	position: absolute;
+	top:0;
+	height: 100%;
+	width: 100%;
+	background-color: #00808040; */
+}
+.channel-page .channelItem p{
+	
+}
+
+.channelItem .content{
+	position: absolute;
+	bottom: 0;
+	background-color: #fff;
+	width: 100%;
+	z-index: 1;
+	height: 20%;
+	text-align: center;
+	padding: 1em;
+}
+
+.channelItem video{
+	height: 100%;
+	width: auto;
+	object-fit: cover;
 }
 
 @keyframes color-change-2x {

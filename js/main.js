@@ -40,7 +40,7 @@ const newsSwiper = new Swiper('.newsSwiper',{
     // when window width is >= 600px
     600: {
       slidesPerView: 2,
-      spaceBetween: 20
+      spaceBetween: 30
     }
   }
 })
