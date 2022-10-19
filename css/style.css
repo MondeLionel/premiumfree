@@ -1,7 +1,7 @@
 :root{
 	--primary-color: #432e4f;
 	--accent-color: #fdab3f;
-	--secondary-color: #180b50;
+	--secondary-color: #3d2963;
 	--plyr-color-main: #180b50;
 }
 
@@ -26,6 +26,7 @@ a:hover{
 
 p{
 
+	color: inherit;
 }
 
 h1,h2,h3{
@@ -44,6 +45,8 @@ section{
 a.btn{
 	font-weight: bold;
 }
+
+
 
 .closeBtn{
 	padding: 1em;
@@ -103,6 +106,10 @@ a.btn{
 	text-decoration: none;
 	font-weight: 600;
 	margin-right: 1em;
+}
+
+.menuItem:hover{
+	text-decoration: underline;
 }
 
 ._jsMenu{
@@ -165,6 +172,15 @@ a.btn{
 	align-items: center;
 	border-radius: 5px;
 	padding: 10px;
+}
+
+.channel:hover{
+	 background: linear-gradient(200deg,var(--secondary-color),var(--accent-color));
+	 color: #fff;
+}
+
+.channel:hover a{
+	color: #fff;
 }
 
 .channel.seeMore{
@@ -277,9 +293,9 @@ a.btn{
 
 .howToItem{
 	padding: 1em 10px;
-	background-color: #ffb609;
+	background-color: var(--plyr-color-main);
 	border-radius: 10px;
-	color: #000;
+	color: #fff;
 	margin-bottom: 2em;
 }
 
@@ -315,7 +331,7 @@ a.btn{
 
 
 .copyright{
-	
+	margin-top: 3em;
 }
 
 .copyright p{
@@ -330,6 +346,8 @@ a.btn{
 .channel-page .hero{
 	height: 70vh;
 	background: unset;
+	margin-top: 0em;
+	padding-top: 5em;
 }
 
 .channel-page .nav-link{
@@ -364,33 +382,140 @@ a.btn{
 	margin-bottom: 2em;
 }
 .channelItem::after{
-/* 	content: '';
-	position: absolute;
-	top:0;
-	height: 100%;
-	width: 100%;
-	background-color: #00808040; */
+
 }
+
 .channel-page .channelItem p{
-	
+	margin: 0;
 }
 
 .channelItem .content{
 	position: absolute;
 	bottom: 0;
-	background-color: #fff;
+	/*! background-color: #fff; */
 	width: 100%;
 	z-index: 1;
 	height: 20%;
 	text-align: center;
 	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .channelItem video{
-	height: 100%;
+	height: 80%;
 	width: auto;
 	object-fit: cover;
 }
+
+/* footer */
+
+footer{
+	padding-top: 3em;
+	border-top:1px solid #614285;
+}
+
+[data-channel="pulse"]{
+	background-color: #00cc65;
+	color: #fff;
+}
+
+[data-channel="limelight"]{
+	background-color: #da831c;
+	color: #fff;
+}
+
+[data-channel="lol_africa"]{
+	background-color: #ffd101;
+	color: #000;
+}
+
+[data-channel="true_african"]{
+	background-color: #f77807;
+	color: #fff;
+}
+
+[data-channel="romanza_africa"]{
+	background-color: #f50a80;
+	color: #fff;
+}
+
+[data-channel="fight_night"]{
+	background-color: #d52824;
+	color: #fff;
+}
+
+[data-channel="fresh"]{
+	background-color: #2fa3ee;
+	color: #fff;
+}
+
+[data-channel="life_tv"]{
+	background-color: #f4cf04;
+	color: #fff;
+}
+
+[data-channel="sports_connect"]{
+	background-color: #244bc4;
+	color: #fff;
+}
+
+[data-channel="kiddiwinks"]{
+	background-color: #b926b2;
+	color: #fff;
+}
+
+[data-channel="gospel_life"]{
+	background-color: #2d97fb;
+	color: #fff;
+}
+
+[data-channel="afriwood_series"]{
+	background-color: #156d61;
+	color: #fff;
+}
+
+[data-channel="bongo_tv"]{
+	background-color: #8b0100;
+	color: #fff;
+}
+
+[data-channel="rpm"]{
+	background-color: #1a1717;
+	color: #fff;
+}
+
+[data-channel="cinema_hausa"]{
+	background-color: #4c3464;
+	color: #fff;
+}
+
+[data-channel="diva"]{
+	background-color: #b926b2;
+	color: #fff;
+}
+
+[data-channel="hard_knocks"]{
+	background-color: #c90;
+	color: #fff;
+}
+
+[data-channel="crime_evidence"]{
+	background-color: #fff;
+	color: #000;
+}
+
+[data-channel="mindset"]{
+	background-color: #009ab2;
+	color: #fff;
+}
+
+[data-channel="trigger"]{
+	background-color: #f00;
+	color: #fff;
+}
+
 
 @keyframes color-change-2x {
   0% {
@@ -402,4 +527,66 @@ a.btn{
   100% {
     background: var(--accent-color);
   }
+}
+
+
+.loader{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: #dfdfdf;
+	z-index: 1001;
+	overflow: hidden;
+	display: flex;
+	transform: translateX(100%);
+	transition: transform 0.3s ease;
+	align-items: center;
+	color: #000;
+}
+
+.loader .loader-content{
+	border-radius:20px;
+	height: 50vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em;
+	/*! background-color: rgba(255,255,255,0.4); */
+	/*! backdrop-filter: blur(20px); */
+	text-align: center;
+}
+
+.loader .bg_img{
+	
+	width: 70%;
+	height: 100vh;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+}
+
+.loader .bg_img img{
+	
+	height: 100%;
+	object-fit: cover;
+}
+
+.loader a{
+	color: inherit;
+	text-decoration: underline;
+}
+.btns a{
+	text-decoration: none;
+}
+
+.btns a:first-of-type{
+	background-color: purple;
+	color:#fff;
+}
+
+.loading .loader{
+	transform: translateX(0%);
+	transition: transform 0.3s ease;
+	will-change: transform;
 }

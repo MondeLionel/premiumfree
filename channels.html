@@ -13,21 +13,22 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="icon" href="https://premiumfree.tv/wp-content/uploads/2021/03/PF-Favicon.png" sizes="32x32">
 </head>
 <body class="loading channel-page">
 	<!-- timer -->
 
 <main>
 	<div class="navigation">
-		<div class="logo">
+		<a href="index.html" class="logo">
 			<img src="img/logo.png" alt="" class="img-fluid">
-		</div>
+		</a>
 		<div class="menu">
 			<a href="#" class="menuItem">News & Updates</a>
 			<a href="channels.html" class="menuItem">Channels</a>
 			<a href="#" class="menuItem" data-bs-toggle="modal" data-bs-target="#howto-modal">How to watch</a>
 			<div class="cta">
-				<a href="#" class="btn btn-warning">Stream Now</a>
+				<a href="https://video.premiumfree.tv/" class="btn btn-warning">Stream Now</a>
 			</div>
 		</div>
 		<a href="javascript:void(0)" class="_jsMenu btn btn-light">Menu</a>
@@ -70,45 +71,249 @@
 		<div class="tab-pane fade show active" id="nav-eng" role="tabpanel" aria-labelledby="nav-home-tab">
 				<!-- channels -->
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-4 col-6">
 					<a href="javascript:void(0)" class="channelItem">
-						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/Pulse_1.mp4" class="hoverVideo" loop muted></video>
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/Pulse_1.mp4" class="hoverVideo" loop muted poster="https://premiumfree.tv/wp-content/uploads/2021/03/Pulse.jpg"></video>
 
-						<div class="content">
+						<div class="content" data-channel="pulse">
 							<p>Pulse</p>
 							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
-						
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_Limelight.mp4" class="hoverVideo" loop muted poster="https://premiumfree.tv/wp-content/uploads/2021/03/Limelight-1.jpg"></video>
+						<span class="content" data-channel="limelight">
+							<p>Limelight</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_LOL.mp4" class="hoverVideo" loop muted poster="https://premiumfree.tv/wp-content/uploads/2021/03/LOL-Africa.jpg"></video>
+						<span class="content" data-channel="lol_africa">
+							<p>LOL Africa</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/True-African_1.mp4" class="hoverVideo" loop muted poster="https://premiumfree.tv/wp-content/uploads/2021/03/True-African.jpg"></video>
+						<span class="content" data-channel="true_african">
+							<p>True African</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+
+				<!-- row 2 -->
+
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_Fresh.mp4" class="hoverVideo" loop muted poster="https://premiumfree.tv/wp-content/uploads/2021/03/Fresh.jpg"></video>
+
+						<div class="content" data-channel="fresh">
+							<p>Fresh</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/Romanza_1.mp4" class="hoverVideo" loop muted poster="https://premiumfree.tv/wp-content/uploads/2021/03/Romanza.jpg"></video>
+						<span class="content" data-channel="romanza_africa">
+							<p>Romanza</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_fight.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="fight_night">
+							<p>Fight Night</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_LifeTV.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="life_tv">
+							<p>Life TV</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+
+				<!-- row 3 -->
+
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/Sports-Connectv2_1.mp4" class="hoverVideo" loop muted></video>
+
+						<div class="content" data-channel="sports_connect">
+							<p>Sports Connect</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_Kiddiwinks_1.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="kiddiwinks">
+							<p>Kiddiwinks</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/Gospel-Life_1.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="gospel_life">
+							<p>Gospel Life</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_Afriwood-Series.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="afriwood_series">
+							<p>Afriwood Series</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+
+				<!-- row 4 -->
+
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/Bongo-tv_-Cross-Promo_NEW_1_1.mp4" class="hoverVideo" loop muted></video>
+
+						<div class="content" data-channel="bongo_tv">
+							<p>Bongo TV</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2022/05/RPM-Promo_1-1.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="rpm">
+							<p>RPM</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2022/05/Cinema-Hausa-Master.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="cinema_hausa">
+							<p>Cinema Hausa</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2022/05/Diva-Channel-Promo.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="diva">
+							<p>DIVA</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+					
+
+				<!-- row 5 -->
+
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2022/05/Afriwood-Promo_V8.mp4" class="hoverVideo" loop muted></video>
+						<div class="content" data-channel="afriwood_series">
+							<p>Afriwood Series</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2022/05/HardKnocks_Promo21_4OCT21.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="hard_knocks">
+							<p>Hard Knocks</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<img src="https://premiumfree.tv/wp-content/uploads/2022/05/trigger-app-thumb.png" alt="" class="img-fluid">
+						<span class="content" data-channel="trigger">
+							<p>Trigger</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+				<div class="col-md-4 col-6">
+					<a href="javascript:void(0)" class="channelItem">
+						<img src="https://premiumfree.tv/wp-content/uploads/2022/05/mindset-app-thumb.png" alt="">
+						<span class="content" data-channel="mindset">
+							<p>Mindset</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
+						</span>
+					</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="tab-pane fade" id="nav-fr" role="tabpanel" aria-labelledby="nav-profile-tab">
+			
+			<div class="row">
+				<div class="col-md-3">
+					<a href="javascript:void(0)" class="channelItem">
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_Fresh.mp4" class="hoverVideo" loop muted></video>
+
+						<div class="content" data-channel="pulse">
+							<p>FRESH</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
 						</div>
 					</a>
 				</div>
 				<div class="col-md-3">
 					<a href="javascript:void(0)" class="channelItem">
-						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_Limelight.mp4" class="hoverVideo" loop muted></video>
-						<span class="content">
-							<p>Limelight</p>
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/Sports-Connectv2_1.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="limelight">
+							<p>Sports Connect</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
 						</span>
 					</a>
 				</div>
 				<div class="col-md-3">
 					<a href="javascript:void(0)" class="channelItem">
-						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_LOL.mp4" class="hoverVideo" loop muted></video>
-						<span class="content">
-							<p>LOL Africa</p>
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_LifeTV.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="lol_africa">
+							<p>Life TV</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
 						</span>
 					</a>
 				</div>
 				<div class="col-md-3">
 					<a href="javascript:void(0)" class="channelItem">
-						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/True-African_1.mp4" class="hoverVideo" loop muted></video>
-						<span class="content">
-							<p>True African</p>
+						<video src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_fight.mp4" class="hoverVideo" loop muted></video>
+						<span class="content" data-channel="true_african">
+							<p>Fight Night</p>
+							<img src="img/icons/arrow_triangle-right.svg" alt="" class="img-fluid">
 						</span>
 					</a>
 				</div>
 					
 			</div>
 		</div>
-		<div class="tab-pane fade" id="nav-fr" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
 	</div>
 </div>
 </main>
@@ -255,14 +460,18 @@
 	<script>
 		const channel_items = document.querySelectorAll('.channelItem')	
 
+		// console.log(channel_items)
+
 		channel_items.forEach(function(channel, index){
+			// console.log(channel)
+
 			channel.addEventListener("click", function(e){
-			e.preventDefault();
-			const vid = e.target.children[0];
+				e.preventDefault();
+				// console.log(e.target.children)
+				const vid = channel.children[0];
 
-			vid.paused ? vid.play() : vid.pause()
-		})
-
+				vid.paused ? vid.play() : vid.pause()
+			})
 		})
 
 		

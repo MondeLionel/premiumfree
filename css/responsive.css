@@ -2,6 +2,16 @@
 /*XS MOBILE*/
 @media (max-width: 360px){
 	*{}
+	.channelItem .content{
+		padding: 5px;
+	}
+	
+	.channelItem .content img{
+		width: 20px;
+	}
+	.channel-page .channelItem p{
+		font-size:0.8rem;
+	}
 }
 
 /*NORMAL MOBILE PORTRAIT*/
@@ -105,5 +115,15 @@
 	
 	.channel-page .channelItem{
 		height: 30vh;
+	}
+	.loader .loader-content{
+		position: absolute;
+		backdrop-filter: blur(20px);
+		background-color: rgba(255,255,255,0.3);
+/* 		color: #fff; */
+	}
+	.loader .bg_img{
+		width: 100%;
+		border-radius:0;
 	}
 }

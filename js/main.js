@@ -1,13 +1,7 @@
-const body = document.querySelector("body")
-
+const body = document.querySelector("body");
 window.addEventListener("scroll", function(){
   checkScroll()
 })
-
-
-  // if(document.body.scrollTop < 50 || document.documentElement.scrollTop < 50){
-
-  // }
 
 const channelSwiper = new Swiper('.channelSwiper', {
   speed: 400,
@@ -50,7 +44,7 @@ function checkScroll(){
   // happy path first approach
    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 150) {
     body.classList.add("scrolled");
-    console.log(document.body.scrollTop)
+    // console.log(document.body.scrollTop)
     return
   }
 

@@ -13,8 +13,32 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="icon" href="https://premiumfree.tv/wp-content/uploads/2021/03/PF-Favicon.png" sizes="32x32">
+	<style>
+		.loading .loader{
+
+		}
+	</style>
 </head>
 <body class="loading">
+
+	<!-- loader -->
+	<div class="loader">
+		<div class="bg_img">
+			<img src="https://premiumfree.tv/wp-content/uploads/2022/09/tttt.png" alt="" class="img-fluid">
+		</div>
+		<div class="loader-content">
+			<img src="img/logo.png" alt="" class="logo img-fluid">
+			<h2>Watch live TV and stream for free</h2>
+			<div class="btns">
+				<a href="https://video.premiumfree.tv/" class="btn btn-light">Stream Live</a>
+				<a href="javascript:void(0)" class="btn btn-warning">How to watch</a>
+			</div>
+			<p>
+				<a href="javascript:void(0)" class="_jsLoader">Continue to website</a>
+			</p>
+		</div>
+	</div>
 	<!-- timer -->
 
 <main>
@@ -23,11 +47,11 @@
 			<img src="img/logo.png" alt="" class="img-fluid">
 		</div>
 		<div class="menu">
-			<a href="#" class="menuItem">News & Updates</a>
+			<a href="#news" class="menuItem">News & Updates</a>
 			<a href="channels.html" class="menuItem">Channels</a>
 			<a href="#" class="menuItem" data-bs-toggle="modal" data-bs-target="#howto-modal">How to watch</a>
 			<div class="cta">
-				<a href="#" class="btn btn-warning">Stream Now</a>
+				<a href="https://video.premiumfree.tv/" class="btn btn-warning">Stream Now</a>
 			</div>
 		</div>
 		<a href="javascript:void(0)" class="_jsMenu btn btn-light">Menu</a>
@@ -47,15 +71,15 @@
 				<h1>WELCOME TO</h1>
 				<h1>PREMIUM.FREE TV</h1>
 				<p>Premium.Free is YOUR 100% FREE multichannel TV bouquet!</p>
-				<a href="#" class="btn btn-warning">Stream Now</a>
+				<a href="https://video.premiumfree.tv/" class="btn btn-warning">Stream Now</a>
 			</div>
 		</div>
 	</div>
 
-		<section class="channels">
+		<section class="channels" id="channels">
 			<div class="heading container">
 				<h1>Channels</h1>
-				<a href="#">See all</a>
+				<a href="channels.html">See all</a>
 			</div>
 			<div class="swiper-container channelSwiper">
 				<div class="swiper-wrapper">
@@ -88,7 +112,7 @@
 			</div>
 		</section>
 
-		<section class="featured container">
+		<section class="featured container" id="featured">
 			<div class="heading ">
 				<h1>Featured this week</h1>
 				<!-- <a href="#">See all</a> -->
@@ -226,7 +250,7 @@
 	</div>
 </section>
 
-<section class="news container">
+<section class="news container" id="news">
 	<div class="heading text-center">
 		<h1 class="">Latest news this week</h1>
 	</div>
@@ -406,5 +430,6 @@
 	<script src="vendors/js/swiper.min.js"></script>
 	<script src="vendors/js/plyr.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/scroll.js"></script>
 </body>
 </html>
