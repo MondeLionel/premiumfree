@@ -32,7 +32,7 @@
 			<h2>Watch live TV and stream for free</h2>
 			<div class="btns">
 				<a href="https://video.premiumfree.tv/" class="btn btn-light">Stream Live</a>
-				<a href="javascript:void(0)" class="btn btn-warning">How to watch</a>
+				<a href="javascript:void(0)" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#howto-modal">How to watch</a>
 			</div>
 			<p>
 				<a href="javascript:void(0)" class="_jsLoader">Continue to website</a>
@@ -85,25 +85,25 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 
-						<a class="channel">
+						<a class="channel" href="https://video.premiumfree.tv/">
 							<video preload="none" src="https://premiumfree.tv/wp-content/uploads/2021/03/Pulse_1.mp4" class="hoverVideo" poster="https://premiumfree.tv/wp-content/uploads/2021/03/Pulse.jpg"></video>
 							<span>pulse</span>
 						</a>
 					</div>
 					<div class="swiper-slide swiper-slide-active">
-						<a class="channel">
+						<a class="channel" href="https://video.premiumfree.tv/">
 							<video preload="none" src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_Limelight.mp4" class="hoverVideo" poster="https://premiumfree.tv/wp-content/uploads/2021/03/Limelight-1.jpg" loop mute></video>
 							<span>limelight</span>
 						</a>
 					</div>
 					<div class="swiper-slide">
-						<a class="channel">
+						<a class="channel" href="https://video.premiumfree.tv/">
 							<video preload="none" src="https://premiumfree.tv/wp-content/uploads/2021/03/COR_CrossPromo_LOL.mp4" class="hoverVideo" poster="https://premiumfree.tv/wp-content/uploads/2021/03/LOL-Africa.jpg" loop mute></video>
 							<span>LOL Africa</span>
 						</a>
 					</div>
 					<div class="swiper-slide">
-						<a class="channel">
+						<a class="channel" href="https://video.premiumfree.tv/">
 							<video preload="none" src="https://premiumfree.tv/wp-content/uploads/2021/03/True-African_1.mp4" class="hoverVideo" poster="https://premiumfree.tv/wp-content/uploads/2021/03/True-African.jpg" loop mute></video>
 							<span>True African</span>
 						</a>
@@ -135,13 +135,21 @@
 								<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."</p>
 								<div class="playBtns">
 									<a href="javascript:void(0)" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#preview-modal">Preview</a>
-									<a href="javascript:void(0)" class="btn btn-warning">Watch Now</a>
+									<a href="https://video.premiumfree.tv/" class="btn btn-warning">Watch Now</a>
 								</div>
 							</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<!-- Banner -->
+		<section class="banner" id="howto">
+			<div class="container">
+				<h1>Want to start watching Live TV for free?</h1>
+				<a href="javascript:void(0)" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#howto-modal">Find out how</a>
 			</div>
 		</section>
 
@@ -307,18 +315,18 @@
 		<div class="col-md-2">
 				<p><b>Resources</b></p>
 			<div class="resources">
-				<a href="#" class="footerItem">Installers</a>
-				<a href="#" class="footerItem">How To's</a>
-				<a href="#" class="footerItem">Find more channels</a>
+				<a href="javascript:void(0)" class="footerItem">Installers</a>
+				<a href="javascript:void(0)" class="footerItem">How To's</a>
+				<a href="javascript:void(0)" class="footerItem">Find more channels</a>
 			</div>
 		</div>
 		<div class="col-md-2">
 				<p><b>Company</b></p>
 			<div class="solutions">
-				<a href="#" class="footerItem">About Us</a>
-				<a href="#" class="footerItem">Partners</a>
-				<a href="#" class="footerItem">Programmes</a>
-				<a href="#" class="footerItem">News and Updates</a>
+				<a href="javascript:void(0)" class="footerItem">About Us</a>
+				<a href="javascript:void(0)" class="footerItem">Partners</a>
+				<a href="javascript:void(0)" class="footerItem">Programmes</a>
+				<a href="javascript:void(0)" class="footerItem">News and Updates</a>
 			</div>
 		</div>
 		<div class="col-md-2">
@@ -359,8 +367,8 @@
 	</div>
 
 	<!-- how to watch -->
-	<div class="modal fade" id="howto-modal">
-		<div class="modal-dialog modal-dialog-centered modal-xl">
+	<div class="modal" id="howto-modal">
+		<div class="modal-dialog modal-fullscreen-xxl-down">
 			<div class="modal-content">
 				<a href="javascript:void(0)" data-bs-dismiss="modal" class="closeBtn">
 					<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -370,8 +378,10 @@
 					</svg>
 				</a>
 				<div class="howTo container">
-	
+					<div class="heading">
 						<h1>How to watch</h1>
+					</div>
+						
 				
 					<div class="row">
 						<!-- 1 -->

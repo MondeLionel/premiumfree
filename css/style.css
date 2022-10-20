@@ -46,6 +46,9 @@ a.btn{
 	font-weight: bold;
 }
 
+.modal-dialog{
+	height: auto;
+}
 
 
 .closeBtn{
@@ -262,6 +265,25 @@ a.btn{
 }
 
 
+/* Banner */
+
+.banner{
+	text-align: center;
+	background-color: var(--secondary-color);
+	height: 50vh;
+	display: flex;
+	align-items: center;
+}
+
+.banner h1{
+	font-size: 3rem;
+	margin-bottom: 1em;
+}
+
+
+/* FAQS */
+
+
 .FAQs{
 
 }
@@ -390,9 +412,8 @@ a.btn{
 }
 
 .channel-page .channelItem{
-	height: 400px;
-	background-color: #fff;
-	color: #000;
+	height: 200px;
+	/*! color: #000; */
 	display: flex;
 	border-radius: 10px;
 	overflow: hidden;
@@ -400,6 +421,13 @@ a.btn{
 	flex-flow: column;
 	margin-bottom: 2em;
 }
+
+.channel-page .channelItem img{
+	height: 100%;
+	object-fit: contain;
+
+}
+
 .channelItem::after{
 
 }
