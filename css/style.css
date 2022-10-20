@@ -313,6 +313,11 @@ a.btn{
 
 .news .newsSwiper{
 	padding: 0;
+	min-height:650px;
+}
+
+.news .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	
 }
 
 .news .heading{

@@ -18,9 +18,15 @@
 
 @media (max-width: 460px){
 	*{}
-	
+	footer .col-md-2{
+		margin-bottom: 2em;
+	}
 	.channel a{
 		font-size: 1rem;
+	}
+	
+	footer .logo{
+		margin-bottom: 2em;
 	}
 	.logo{
 		width: 60vw;

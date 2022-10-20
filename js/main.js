@@ -30,6 +30,10 @@ const newsSwiper = new Swiper('.newsSwiper',{
     speed: 400,
   spaceBetween: 10,
   slidesPerView:1,
+   pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
    breakpoints: {
     // when window width is >= 600px
     600: {
@@ -67,3 +71,4 @@ menuBtn.addEventListener("click", function(e){
 })
 
 const player = new Plyr('#preview-video');
+
