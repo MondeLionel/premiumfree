@@ -1,5 +1,6 @@
 const removeLoaderBtn = document.querySelector("._jsLoader");
 const loaderEl = document.querySelector(".loader")
+const videoHoverEl = document.querySelectorAll(".hoverVideo");
 
 if(sessionStorage.getItem("viewed") == "true"){
   console.log('already viewed')
@@ -7,6 +8,16 @@ if(sessionStorage.getItem("viewed") == "true"){
   body.classList.remove("loading");
 
 }
+videoHoverEl.forEach(function(videoEl, index){
+  videoEl.addEventListener("click", function(e){
+    e.preventDefault();
+    // console.log(e.target)
+    videoEl.paused ? videoEl.play() : videoEl.pause()
+     // videoEl.play();
+
+  })
+})
+
 
 removeLoaderBtn.addEventListener("click", function(){
   removeLoader();

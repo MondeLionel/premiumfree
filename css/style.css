@@ -166,12 +166,16 @@ a.btn{
 
 .channel{
 	background-color: #fff;
-	height: 100px;
+	height: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 5px;
-	padding: 10px;
+
+	flex-flow: column;
+	color: #000;
+	justify-content: ;
+	overflow: hidden;
 }
 
 .channel:hover{
@@ -181,6 +185,21 @@ a.btn{
 
 .channel:hover a{
 	color: #fff;
+}
+
+.channel .hoverVideo{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.channel span{
+	padding: 10px;
+	/*opacity: 1;*/
+}
+
+.channel:hover span{
+	/*opacity: 0;*/
 }
 
 .channel.seeMore{
