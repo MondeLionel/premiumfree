@@ -7,7 +7,11 @@ const channelSwiper = new Swiper('.channelSwiper', {
   speed: 400,
   spaceBetween: 10,
   slidesPerView:2,
-  freeMode: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // freeMode: true,
    breakpoints: {
     // when window width is >= 600px
     600: {
