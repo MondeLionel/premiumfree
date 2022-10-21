@@ -176,11 +176,10 @@ a.btn{
 	justify-content: center;
 	align-items: center;
 	border-radius: 5px;
-
 	flex-flow: column;
 	color: #000;
-	justify-content: ;
 	overflow: hidden;
+	text-transform: capitalize;
 }
 
 .channel:hover{
